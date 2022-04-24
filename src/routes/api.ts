@@ -5,7 +5,7 @@ import Fetcher from '@services/fetcher';
 
 // Export the base-router
 const baseRouter = Router();
-const { OK } = StatusCodes;
+const { OK, NOT_FOUND } = StatusCodes;
 
 // Setup routers
 baseRouter.get('/:url(*)', async (req: Request, res: Response) => {
@@ -14,8 +14,15 @@ baseRouter.get('/:url(*)', async (req: Request, res: Response) => {
     if (!url) {
         throw new Error('missing URL');
     }
-    await fetcher.get(url)
-    return res.status(OK).end();
+    try {
+        const bufferResponse = await fetcher.get(url);
+        return res.status(OK).end(bufferResponse);
+    } catch (error) {
+        res.status(NOT_FOUND).end();
+        if(error && typeof error === 'string') {
+            throw new Error(error);
+        }
+    }
 });
 
 // Export default.
