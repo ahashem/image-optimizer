@@ -1,4 +1,4 @@
-## Express boilerplate service
+## Image optimization service
 
 [![CI Build](https://github.com/ahashem/image-optimizer/actions/workflows/build.yml/badge.svg)](https://github.com/ahashem/image-optimizer/actions/workflows/build.yml)
 
@@ -23,13 +23,13 @@ $> curl --request GET -sL \
 
 
 ### Roadmap
- - [x] NodeJS API-first microservice; created using [express-generator-typescript](https://www.npmjs.com/package/express-generator-typescript) 
- - [x] Example API route (users with local DB)
+ - [x] NodeJS API-first microservice; created using [personal template repository](https://github.com/ahashem/express-boilerplate-service)
  - [x] Health check endpoints
  - [x] CI checks for build
+ - [x] Happy scenario image fetching and resizing API using [Sharp](https://www.npmjs.com/package/sharp) 
  - [ ] Dockerfile
- - [ ] Added security layer (with URL tokens and hashing)
- - [ ] Usage patterns in a cluster of services (e.g with CDN, with caching layer and proxy-server, serverless approach)
+ - [ ] Added security layer (with URL tokens and/or hashing)
+ - [ ] Usage patterns: (e.g with CDN, with caching layer and proxy-server, serverless approach)
  - [ ] Telemetry support
  - [ ] Logging Middleware
  - [ ] API versioning
