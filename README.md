@@ -38,3 +38,12 @@ $> curl --request GET -sL \
 
 ### Caveats
  TBD
+
+
+### On the shoulders of Giants
+This NodeJS implementation is far from done. It's inspired by years of working and tinkering with other solutions such as:
+ - [thumbor](https://github.com/thumbor/thumbor)
+ - [imgproxy](https://github.com/imgproxy/imgproxy)
+ - [ImageMagick](https://github.com/ImageMagick/ImageMagick)
+
+![Long live and prosper](.github/llap.png)
