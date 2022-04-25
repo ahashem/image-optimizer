@@ -1,6 +1,6 @@
 {
-  "name": "express-boilerplate-service",
-  "version": "0.0.0",
+  "name": "image-optimizer",
+  "version": "0.1.0",
   "scripts": {
     "build": "./node_modules/.bin/ts-node build.ts",
     "lint": "eslint . --ext .ts",
@@ -97,6 +97,7 @@
     "fs-extra": "10.0.1",
     "jasmine": "4.1.0",
     "nodemon": "2.0.15",
+    "prettier": "2.6.2",
     "supertest": "6.2.2",
     "ts-node": "10.7.0",
     "tsconfig-paths": "3.14.1",
